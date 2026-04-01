@@ -43,7 +43,7 @@ Expected default paths in the included configs:
 
 `outputs/` is created automatically when you run experiments and does not need to be restored manually.
 
-## Single entrypoint
+## Entrypoint
 
 List supported runs:
 
@@ -90,7 +90,7 @@ Show the underlying runner help:
 python3 -m fem_ml_bench run --task anomaly_detection --model lstm_autoencoder --runner-help
 ```
 
-## Current task-model mapping
+## Task Mapping
 
 - `classification`: `rnn`, `lstm`, `transformer`
 - `anomaly_detection`: `rnn_autoencoder`, `lstm_autoencoder`, `transformer_autoencoder`
