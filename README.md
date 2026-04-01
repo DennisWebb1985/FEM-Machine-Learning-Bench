@@ -4,9 +4,9 @@ This repository is a consolidated experiment repository for FEM-based surrogate 
 
 ## What is included
 
-- reusable training code under `src/`
+- training code under `src/`
 - experiment configs under `experiments/configs/`
-- a single CLI entrypoint under `fem_ml_bench/`
+- CLI entrypoint under `fem_ml_bench/`
 
 Recommended placeholders:
 
