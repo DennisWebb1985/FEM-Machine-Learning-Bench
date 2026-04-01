@@ -1,6 +1,6 @@
 # FEM Machine Learning Bench
 
-This repository is a consolidated experiment repository for FEM-based surrogate modeling, structural sequence classification, anomaly detection, and image classification. It was developed and used as part of the Chung-Ang University undergraduate thesis *인공지능 기반 구조 해석 모델의 연구 동향 및 기술 발전 분석*.
+This repository is a consolidated experiment repository for FEM-based surrogate modeling, structural sequence classification, anomaly detection, and image classification. It was developed and used as part of the Chung-Ang University undergraduate thesis *「인공지능 기반 구조 해석 모델의 연구 동향 및 기술 발전 분석」*.
 
 ## What is included
 
