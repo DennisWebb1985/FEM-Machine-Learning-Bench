@@ -1,0 +1,40 @@
+experiment:
+  name: rnn_classification
+
+paths:
+  data: data/raw/classification.csv
+  output_dir: outputs/rnn_classification/final
+
+data:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  feature_cols:
+    - Accel_X (m/s^2)
+    - Accel_Y (m/s^2)
+    - Accel_Z (m/s^2)
+    - Strain (με)
+    - Temp (°C)
+
+window:
+  length: 16
+  stride: 1
+  label_mode: last
+
+training:
+  batch_size: 32
+  epochs: 60
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 10
+  grad_clip: 1.0
+  num_workers: 0
+
+model:
+  hidden_size: 32
+  num_layers: 1
+  dropout: 0.1
+
+shap:
+  enabled: true
+  background_size: 32
+  num_explain_samples: 24

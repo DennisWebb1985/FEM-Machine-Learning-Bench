@@ -1,0 +1,47 @@
+experiment:
+  name: mlp_regression
+
+paths:
+  train_data: data/raw/mlp/5184doe.csv
+  test_data: data/raw/mlp/1000randoms.csv
+  output_dir: outputs/mlp
+
+data:
+  sample_column: Sample
+  input_columns:
+    - ecc
+    - N
+    - gammaG
+    - Esoil
+    - Econc
+    - Dbot
+    - H1
+    - H2
+    - H3
+  target_columns:
+    - Mr_t
+    - Mt_t
+    - Mr_c
+    - Mt_c
+  validation_split: 0.2
+
+model:
+  hidden_dims:
+    - 64
+    - 64
+    - 32
+  dropout: 0.1
+
+training:
+  seed: 42
+  batch_size: 128
+  epochs: 500
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 40
+  min_delta: 0.000001
+
+shap:
+  enabled: true
+  background_size: 200
+  num_explain_samples: 100
