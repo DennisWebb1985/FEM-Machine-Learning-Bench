@@ -10,9 +10,9 @@ This repository is a consolidated experiment repository for FEM-based surrogate 
 
 Recommended placeholders:
 
-- Building classification dataset: https://www.kaggle.com/datasets/daalgi/fem-simulations
+- Building classification dataset: https://www.kaggle.com/datasets/ziya07/building-structural-health-sensor-dataset
 - Anomaly-detection dataset: https://zenodo.org/records/8300495
-- FEM MLP dataset: https://www.kaggle.com/datasets/ziya07/building-structural-health-sensor-dataset
+- FEM MLP dataset: https://www.kaggle.com/datasets/daalgi/fem-simulations
 - Concrete crack image dataset: https://data.mendeley.com/datasets/5y9wdsg2zt/2
 
 After cloning this repository, recreate the dataset folders inside the repository root before running experiments:
